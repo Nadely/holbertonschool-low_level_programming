@@ -5,10 +5,6 @@
 */
 int main(void)
 {
-printf(char);
-printf(int);
-printf(long int);
-printf(long long int);
-printf(float);
+printf(siezof(char));
 return (0);
 }
