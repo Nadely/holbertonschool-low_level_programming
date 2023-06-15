@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* puts - use puts in programm C
+* function_name - short description
 */
 int main(void)
 {
