@@ -5,6 +5,6 @@
 */
 int main(void)
 {
-putchar(char);
+putchar;
 return (0);
 }
