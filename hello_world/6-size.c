@@ -5,6 +5,6 @@
 */
 int main(void)
 {
-printf
+printf("\n %d% octets pour variable de type char ",sizeof(char));
 return (0);
 }
