@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*function_name - short description
+* function_name - short description
 */
 int main(void)
 {
