@@ -1,7 +1,9 @@
 #include <stdio.h>
-int main(void)
+int main()
 {
     char Mystr[]="Programming is like building a multiligual puzzle";
-    puts (Mystr);
+    
+    puts(Mystr);
+
     return (0);
     }
