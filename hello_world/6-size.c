@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-putchar(m32);
-putchar(m64);
+putchar(32);
+putchar(64);
 return (0);
 }
