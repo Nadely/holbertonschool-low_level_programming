@@ -9,5 +9,5 @@ puts(Mystr);
 return (0);
 }
 /**
-* return : Description of the returned value
+* Return : Description of the returned value
 */
