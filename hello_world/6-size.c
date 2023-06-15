@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-printf("\n %d Size of a char ", sizeof(char)\n);
+printf("\n $zu Size of a char ", sizeof(char));
 printf("\n %d Size of a int ", sizeof(int));
 printf("\n %d Size of a long int ", sizeof(long int));
 printf("\n %d Size of a long long int ", sizeof(long long int));
