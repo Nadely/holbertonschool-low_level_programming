@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
 * function_name - short description
+* return : Description of the returned value
 */
 int main(void)
 {
