@@ -5,6 +5,6 @@
 */
 int main(void)
 {
-printf(siezof(char));
+printf(char);
 return (0);
 }
