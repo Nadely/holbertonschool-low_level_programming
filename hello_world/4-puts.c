@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-* function_name - short description
-* Return : Description of the returned value
+* main - print a string
+* Return: Description of the returned value
 */
 int main(void)
 {
