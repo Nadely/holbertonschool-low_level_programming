@@ -5,6 +5,10 @@
 */
 int main(void)
 {
-putchar;
+printf(%d octets\n", sizeof(char));
+printf(%d octets\n", sizeof(int));
+printf(%d octets\n", sizeof(long));
+printf(%d octets\n", sizeof(long long int));
+printf(%d octets\n", sizeof(float));
 return (0);
 }
