@@ -5,7 +5,10 @@
 */
 int main(void)
 {
-putchar(32);
-putchar(64);
+printf(char);
+printf(int);
+printf(long int);
+printf(long long int);
+printf(float);
 return (0);
 }
