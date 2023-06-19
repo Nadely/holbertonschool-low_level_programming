@@ -1,12 +1,13 @@
 #include <stdio.h>
 /**
-* main - puchar command
-* return: puchar command
+* main - putchar command
+* Return: putchar command
 */
 int main(void)
 {
-int alpha;
-for(alpha='a'; alpha<='z'; alpha++);
+char alpha = 'a';
+while (alpha <= 'z');
 putchar(alpha);
+alpha++;
 return (0);
 }
