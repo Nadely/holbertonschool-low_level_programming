@@ -1,0 +1,17 @@
+1-last_digit.c:13:2: error: ‘last’ undeclared (first use in this function)
+   13 |  last = number % 10;
+      |  ^~~~
+1-last_digit.c:13:2: note: each undeclared identifier is reported only once for each function it appears in
+1-last_digit.c:13:9: error: ‘number’ undeclared (first use in this function)
+   13 |  last = number % 10;
+      |         ^~~~~~
+1-last_digit.c:18:9: error: statement with no effect [-Werror=unused-value]
+   18 | else (n == 0)
+      |      ~~~^~~~~
+1-last_digit.c:18:14: error: expected ‘;’ before ‘printf’
+   18 | else (n == 0)
+      |              ^
+      |              ;
+   19 |        printf("Last digit of %d is %d and is 0\n", n, last);
+      |        ~~~~~~
+cc1: all warnings being treated as errors
