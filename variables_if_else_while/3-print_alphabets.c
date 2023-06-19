@@ -11,8 +11,6 @@ for (AZ = 'A'; AZ <= 'Z'; AZ++)
 {
 putchar(az);
 putchar(AZ);
-}
-{
 putchar('\n');
 }
 return (0);
