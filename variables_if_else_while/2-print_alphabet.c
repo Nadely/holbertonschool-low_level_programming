@@ -5,9 +5,9 @@
 */
 int main(void)
 {
-char alpha = 'a';
-while (alpha <= 'z');
-putchar(alpha);
-alpha++;
+int az;
+for(az = 'a'; az <= 'z'; az++);
+putchar(az);
+putchar(az++);
 return (0);
 }
