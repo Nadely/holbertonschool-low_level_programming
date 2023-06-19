@@ -2,9 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* more headers goes there
-* betty style doc for function main goes there
-* 
+* main - positive and negative
 * Return: Description of the returned value
 */
 int main(void)
@@ -12,11 +10,12 @@ int main(void)
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-if (n < 0)
-printf("n is positive");
-if (n == 0)
-printf("n is zero");
 if (n > 0)
-printf("n is negative");
+printf("%d is positive", n);
+if (n == 0)
+printf("\n %d is zero",n);
+if (n < 0)
+printf("\n %d is negative", n);
+printf (\n);
 return (0);
 }
