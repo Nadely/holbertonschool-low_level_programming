@@ -9,6 +9,7 @@ int az;
 for (az = 'a'; az <= 'z'; az++)
 {
 putchar(az);
+except('q', 'e')
 }
 {
 putchar('\n');
