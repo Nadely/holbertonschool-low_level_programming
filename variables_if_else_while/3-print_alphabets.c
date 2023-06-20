@@ -10,6 +10,8 @@ for (az = 'a'; az <= 'z'; az++)
 for (AZ = 'A'; az <= 'Z'; AZ++)
 {
 putchar(az);
+}
+{
 putchar(AZ);
 }
 {
