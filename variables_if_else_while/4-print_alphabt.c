@@ -11,6 +11,8 @@ for (az = 'a'; az <= 'z'; az++)
 if (az !='e' && az !='q')
 {
 putchar(az);
+}
+{
 putchar('\n');
 }
 return (0);
