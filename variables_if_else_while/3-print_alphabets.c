@@ -9,8 +9,8 @@ int az, AZ;
 for (az = 'a'; az <= 'z'; az++)
 {
 putchar(az);
-}
 for (AZ = 'A'; az <= 'Z'; AZ++)
+}
 {
 putchar(AZ);
 }
