@@ -7,7 +7,7 @@ int main(void)
 {
 int za;
 for (za = 'a'; za <= 'z'; za++)
-if !((za = 'a' && za <= 'z'))
+if (!(za = 'a' && za <= 'z'))
 {
 putchar(za);
 }
