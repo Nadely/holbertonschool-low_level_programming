@@ -6,7 +6,7 @@
 int main(void)
 {
 int numbers, af;
-for(numbers = 0; numbers <= 9; numbers++)
+for (numbers = 0; numbers <= 9; numbers++)
 putchar(numbers);
 for (af = 'a'; af <= 'f'; af++)
 putchar(af);
