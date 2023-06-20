@@ -7,6 +7,7 @@ int main(void)
 {
 int az;
 for (az = 'a'; az <= 'z'; az++)
+grep [eq]
 {
 putchar(az);
 }
