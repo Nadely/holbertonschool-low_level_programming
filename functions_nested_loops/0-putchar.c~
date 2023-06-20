@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+* main - first main
+* Return: first main
+*/
+int main(void)
+{
+_putchar.c;
+return (0);
+}
