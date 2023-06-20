@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-* main - putchar command
-* Return: putchar command
+* main - putchar command and except
+* Return: putchar command and except
 */
 int main(void)
 {
