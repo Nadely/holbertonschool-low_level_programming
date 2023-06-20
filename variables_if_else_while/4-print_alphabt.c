@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-int az;
+int az, except;
 except ('q', 'e');
 for (az = 'a'; az <= 'z'; az++)
 {
