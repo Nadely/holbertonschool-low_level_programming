@@ -7,7 +7,7 @@ int main(void)
 {
 int numbers, comma;
 for (numbers = '0'; numbers <= '9'; numbers++)
-for (comma = ',');
+for (comma = ',')
 {
 putchar(numbers);
 putchar(comma);
