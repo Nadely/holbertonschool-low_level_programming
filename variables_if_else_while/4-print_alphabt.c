@@ -5,9 +5,8 @@
 */
 int main(void)
 {
-int az;
-for (az = 'a'; az <= 'z'; az++)
-for (az -- 'e'; az -- 'q'; az--)
+int az,;
+for (az = 'a'; az <= 'z'; -- 'e', 'q'; az++)
 {
 putchar(az);
 }
