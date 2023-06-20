@@ -6,8 +6,7 @@
 int main(void)
 {
 int za;
-for (za = 'a'; za <= 'z'; za++)
-if (!(za = 'a' && za = 'z'))
+for (za = 'z'; za >= 'a'; za--)
 {
 putchar(za);
 }
