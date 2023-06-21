@@ -13,5 +13,6 @@ _putchar(az);
 }
 {
 _putchar('\n');
+i++;
 }
 }
