@@ -9,10 +9,12 @@ int az, i;
 for (i = 0; i < 10; i++)
 for (az = 'a'; az <= 'z'; az++)
 {
-i++;
 _putchar(az);
 }
 {
 _putchar('\n');
+}
+{
+i++;
 }
 }
