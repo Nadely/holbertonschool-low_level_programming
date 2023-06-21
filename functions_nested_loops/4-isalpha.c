@@ -2,6 +2,7 @@
 /**
 * _isalpha - lowercase or not
 * Return: lowercase or not
+* @c: isalpha
 */
 int _isalpha(int c)
 {
