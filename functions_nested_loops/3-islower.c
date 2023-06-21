@@ -5,8 +5,7 @@
 */
 int _islower(int c)
 {
-int character;
-if (character = 'c')
+if (c = 'c')
 {
 _putchar(1);
 }
