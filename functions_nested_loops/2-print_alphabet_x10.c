@@ -12,7 +12,7 @@ for (az = 'a'; az <= 'z'; az++)
 _putchar(az);
 }
 {
-i;
+i++;
 _putchar('\n');
 }
 }
