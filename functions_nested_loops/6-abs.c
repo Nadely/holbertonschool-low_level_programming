@@ -2,6 +2,7 @@
 /**
 * _abs - absolute
 * Return: absolute
+* @n : numbers
 */
 int _abs(int n)
 {
