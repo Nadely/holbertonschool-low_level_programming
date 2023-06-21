@@ -5,8 +5,8 @@
 */
 void print_alphabet_x10(void)
 {
-int az, i = 0;
-while (i < 10)
+int az, i;
+for (i = 0; i < 10; i++)
 for (az = 'a'; az <= 'z'; az++)
 {
 _putchar(az);
