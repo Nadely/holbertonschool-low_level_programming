@@ -5,6 +5,7 @@
 */
 int main(void)
 {
-_putchar('_');
+_putchar('c');
+_putchar('\n');
 return (0);
 }
