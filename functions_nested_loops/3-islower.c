@@ -5,8 +5,9 @@
 */
 int _islower(int c)
 {
-int c;
-if (c = 'c')
+int az;
+for (az = 'a'; az <= 'z'; a++) 
+if (az = 'c')
 {
 _putchar(1);
 }
