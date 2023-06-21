@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* _isalpha - lowercase character
+* _islower - lowercase character
 * Return: lowercase character
 */
-int _isalpha(int c)
+int _islower(int c)
 {
-if (c)
+_islower (c)
 {
 return (1);
 }
