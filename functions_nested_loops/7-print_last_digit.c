@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_last - last number
+ * print_last_digit - last number
  * Return: last number
- *@x: last
+ * @x: last
  */
 int print_last_digit(int x)
 {
