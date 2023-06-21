@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* _islower - lowercase character
+* _isalpha - lowercase character
 * Return: lowercase character
 */
-int _islower(int c)
+int _isalpha(int c)
 {
 if (c)
 {
