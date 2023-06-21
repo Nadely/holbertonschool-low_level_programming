@@ -11,7 +11,7 @@ if (c)
 {
 return (1);
 }
-else if (c == 'c')
+else
 {
 return (0);
 }
