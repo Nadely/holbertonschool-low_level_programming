@@ -5,9 +5,9 @@
 */
 int _islower(int c)
 {
-for (c = 'a'; c <= 'z'; c++)
+for (c >= 'a'; c <= 'z'; c++)
 {
-if ('c' >= c && 'c' <= c)
+if (c)
 {
 _putchar(1);
 }
