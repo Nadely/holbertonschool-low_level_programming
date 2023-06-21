@@ -11,7 +11,7 @@ if (c)
 {
 return (1);
 }
-else
+else if (!(c))
 {
 return (0);
 }
