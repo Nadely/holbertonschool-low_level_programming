@@ -2,6 +2,7 @@
 /**
 * _islower - lowercase character
 * Return: lowercase character
+* @c: islower
 */
 int _islower(int c)
 {
