@@ -11,7 +11,7 @@ for (f = 48; f <= 57; f++)
 for (m = 48; m <= 53; m++)
 for (n = 48; n <= 57; n++)
 {
-if (h == 50, f <= 51)
+if (h = 50 && f <= 51)
 _putchar(h);
 _putchar(f);
 _putchar(':');
