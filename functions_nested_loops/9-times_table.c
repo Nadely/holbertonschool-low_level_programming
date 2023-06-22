@@ -6,10 +6,14 @@
 void times_table(void)
 {
 int n, o, r;
-for (n = '0'; n <= '9'; n++)
-for (o = '0'; o <= '9'; o++)
-r = n * o;
-_putchar(r);
+for (n = 0; n <= 9; n++)
+{
+for (o = 0; o <= 9; o++)
+{
+r=(n * o);
+_putchar(n);
 _putchar (',');
 _putchar ('\n');
+}
+}
 }

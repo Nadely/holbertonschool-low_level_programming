@@ -3,21 +3,17 @@
 * print_last_digit - last number
 * Return: last number
 * @x: last
+* @n: number
 */
 int print_last_digit(int x)
 {
 int n = x % 10;
+{
 if (x < 0)
-{
-return (-1 * (n));
-_putchar(n);
+n = n * -1;
+_putchar (n);
+return(n);
 }
-else
-{
-_putchar(n);
-return (0);
+return(0);
 }
-{
-return (0);
-}
-}
+
