@@ -7,6 +7,17 @@
 int print_last_digit(int x)
 {
 int n = x % 10;
+if (x < 0)
+{
+return (-1*(x));
+_putchar (n);
+}
+else
+{
 _putchar(n);
 return (0);
+}
+{
+return (0)
+}
 }
