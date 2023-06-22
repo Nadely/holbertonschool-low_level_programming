@@ -8,7 +8,10 @@ void times_table(void)
 {
 int n;
 for (n = 48; n <= 57; n++)
-return (n*(n));
+{
+return (n * n)
+}
 _putchar(n);
 _putchar ('\n');
+}
 }
