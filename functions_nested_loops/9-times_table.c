@@ -2,6 +2,7 @@
 /**
 * times_table - 9 table
 * Return: 9 table
+* @n: numbers
 */
 void times_table(void)
 {
