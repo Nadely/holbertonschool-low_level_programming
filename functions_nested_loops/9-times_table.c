@@ -3,6 +3,7 @@
 * times_table - 9 table
 * Return: 9 table
 * @n: numbers
+*@o; numbers
 */
 void times_table(void)
 {
