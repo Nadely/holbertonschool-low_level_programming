@@ -10,7 +10,7 @@ int n = x % 10;
 if (x < 0)
 {
 return (-1 * (n));
-_putchar (n);
+_putchar(n);
 }
 else
 {
