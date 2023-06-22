@@ -16,6 +16,5 @@ _putchar(f);
 _putchar(':');
 _putchar(m);
 _putchar(n);
-_putchar('\n');
 }
 }
