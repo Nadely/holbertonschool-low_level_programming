@@ -28,6 +28,6 @@ _putchar('0' + (som % 10));
 if (y != 9)
 _putchar(',');
 }
-_putchar('\n') 
+_putchar('\n');
 }
 }
