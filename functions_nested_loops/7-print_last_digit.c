@@ -13,7 +13,7 @@ n = x % 10;
 if (x < 0)
 n = n * -1;
 _putchar (n);
-return(n);
+return(x);
 }
 return(0);
 }
