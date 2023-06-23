@@ -10,14 +10,14 @@ for (x = 0; x <= 9; x++)
 {
 _putchar('0');
 _putchar(',');
-for (y = 0; y <= 9; y++)
+for (y = 1; y <= 9; y++)
 {
 som = x * y;
 _putchar(' ');
 if (som < 10)
 {
 _putchar(' ');
-_putchar('0' + (som / 10));
+_putchar('0' + (som % 10));
 }
 else
 {
