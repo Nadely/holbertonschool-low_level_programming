@@ -2,7 +2,6 @@
 /**
 * print_numbers - Print
 * Return: Print
-* @n: numbers
 */
 void print_numbers(void)
 {
