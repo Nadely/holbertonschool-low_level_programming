@@ -2,6 +2,7 @@
 /**
 * _isupper - uppercase character
 * Return: uppercase character
+* @c: letter
 */
 int _isupper(int c)
 {
