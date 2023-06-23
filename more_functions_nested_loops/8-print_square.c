@@ -2,7 +2,7 @@
 /**
 * print_square  - square line
 * Return: square line
-* @n: numbers
+* @size: numbers
 */
 void print_square(int size)
 {
