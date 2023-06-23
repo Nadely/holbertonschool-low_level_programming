@@ -19,7 +19,7 @@ _putchar(' ');
 _putchar('0' + (som / 10));
 _putchar('0' + (som % 10));
 }
-else
+else if (som < 10)
 {
 _putchar('\n');
 _putchar('\n');
