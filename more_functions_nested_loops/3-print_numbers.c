@@ -2,11 +2,10 @@
 /**
 * print_numbers - Print
 * Return: Print
-* @n: numbers
 */
-void print_numbers(int n)
+void print_numbers(void)
 {
-for (n = 0; n < = 9; n++)
+for (n = 0; n <= 9; n++)
 _putchar(n);
 _putchar('\n');
 }
