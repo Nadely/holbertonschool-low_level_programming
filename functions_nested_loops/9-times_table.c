@@ -13,16 +13,15 @@ _putchar(',');
 for (y = 1; y <= 9; y++)
 {
 som = x * y;
-if (som >= 10)
+_putchar(' ');
+if (som < 10)
 {
 _putchar(' ');
 _putchar('0' + (som / 10));
-_putchar('0' + (som % 10));
 }
-else if (som < 10)
+else
 {
-_putchar('\n');
-_putchar('\n');
+_putchar('0' + (som / 10));
 _putchar('0' + (som % 10));
 }
 if (y != 9)
