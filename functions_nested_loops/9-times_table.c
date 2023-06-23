@@ -5,15 +5,29 @@
 */
 void times_table(void)
 {
-int n, o, r;
-for (n = 0; n <= 9; n++)
+int x, y, som;
+for (x = 0; x <= 9; x++)
 {
-for (o = 0; o <= 9; o++)
+_putchar('0');
+_putchar (',');  
+for (y = 1; y <= 9; y++)
 {
-r=(n * o);
-_putchar(n);
-_putchar (',');
-_putchar ('\n');
+som = x * y;
+if (som >= 10)
+{
+_putchar(' ');
+_putchar ('0' + (som / 10));
+_putchar ('0' + (som % 10);
 }
+else 
+{
+_putchar('\n');
+_putchar('\n');
+_putchar('0' + (som % 10));
+}
+if (y != 9)
+_putchar(',');
+}
+_putchar('\n') 
 }
 }
