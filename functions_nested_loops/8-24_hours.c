@@ -12,9 +12,8 @@ _putchar(h);
 }
 for (f = '0'; f <= '9'; f++)
 {
-if (h <= '2')
+if ((h <= '2')&&(f <= '3')
 {
-f = '0' ; f <= '3'
 _putchar(f);
 _putchar(':');
 }
