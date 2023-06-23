@@ -17,7 +17,7 @@ if (som >= 10)
 {
 _putchar(' ');
 _putchar('0' + (som / 10));
-_putchar('0' + (som % 10);
+_putchar('0' + (som % 10));
 }
 else 
 {
