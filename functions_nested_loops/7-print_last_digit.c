@@ -2,19 +2,16 @@
 /**
 * print_last_digit - last number
 * Return: last number
-* @x: last
 * @n: number
 */
-int print_last_digit(int x)
+int print_last_digit(int n)
 {
-int n;
-n = x % 10;
+int last;
+if (n < 0)
 {
-if (x < 0)
 n = n * -1;
-_putchar (n);
-return(x);
 }
-return(0);
+last = n % 10;
+return(last);
 }
 
