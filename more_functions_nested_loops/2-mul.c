@@ -7,8 +7,7 @@
 */
 int mul(int a, int b)
 {
-for (a * b)
-}
-{
+int c
+c = (a * b)
 return (0)
 }
