@@ -6,9 +6,9 @@
 int main(void)
 {
 int n;
-char a = FizzBuzz;
-char b = Fizz;
-char c = Buzz;
+int a = FizzBuzz;
+int b = Fizz;
+int c = Buzz;
 for (n = 1; n <= 100; n++)
 {
 if ((n % 3 == 0) && (n % 5 ==0))
