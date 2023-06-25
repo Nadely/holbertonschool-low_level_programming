@@ -15,8 +15,9 @@ for (x = 0; x <= size; x++)
 {
 for (y = 0; y <= size; y++)
 {
+if (y > x)
 _putchar(' ');
-{
+else
 _putchar(35);
 _putchar('\n');
 }
