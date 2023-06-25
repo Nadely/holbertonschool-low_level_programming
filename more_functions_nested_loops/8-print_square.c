@@ -14,9 +14,9 @@ else
 for (x = 0; x <= size; x++)
 {
 for (y = 0; y <= size; y++)
-if (x = y - 1)
 _putchar(35);
 _putchar('\n');
+x--;
 }
 }
 }
