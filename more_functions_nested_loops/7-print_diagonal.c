@@ -14,11 +14,11 @@ else
 {
 for (x = 0; x <= n; x++)
 {
+_putchar(' ');
 _putchar(92);
-_putchar ('\n');
 {
 for (y = 0; y <= x; y++)
-_putchar(' ' * x);
+_putchar ('\n');
 }
 }
 }
