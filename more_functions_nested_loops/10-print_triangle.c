@@ -11,10 +11,10 @@ if (size <= 0)
 _putchar('\n');
 else
 {
-for (y = 1; y <= size; y++)
+for (y = 0; y <= size; y++)
 {
-for (x = 0; x <= size; x++)
-if (y < x)
+for (x = 1; x <= size; x++)
+if (y > x)
 _putchar(35);
 _putchar('\n');
 }
