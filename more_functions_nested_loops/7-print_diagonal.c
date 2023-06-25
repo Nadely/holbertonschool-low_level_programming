@@ -17,7 +17,7 @@ _putchar ('\n');
 }
 else if (n <= 0)
 _putchar('\n');
-for (y = 0; y <= x - 1; y++)
+for (y = 0; y <= x; y++)
 _putchar(' ');
 }
 }
