@@ -12,7 +12,6 @@ _putchar('\n');
 else
 {
 for (y = 0; y <= size; y++)
-_putchar(' ');
 {
 for (x = 1; x <= size; x++)
 if (y < x)
