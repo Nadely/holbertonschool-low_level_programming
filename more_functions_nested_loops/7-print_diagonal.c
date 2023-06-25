@@ -12,11 +12,11 @@ for (x = 0; x <= n; x++)
 _putchar(' ');
 _putchar(92);
 _putchar('\n');
+if (n <= 0)
+_putchar('\n');
 for (y = 0; y <= x + 1; y++)
 {
 _putchar(' ');
 }
-if (n <= 0)
-_putchar('\n');
 }
 }
