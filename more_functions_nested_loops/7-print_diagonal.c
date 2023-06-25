@@ -18,9 +18,11 @@ for (y = 1; y <= x; y++)
 {
 _putchar(' ');
 if (y < x)
-}
+{
 _putchar(92);
 _putchar ('\n');
+}
+}
 }
 }
 }
