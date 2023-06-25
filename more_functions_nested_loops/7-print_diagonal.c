@@ -7,9 +7,9 @@
 void print_diagonal(int n)
 {
 int x, y;
-for (x = 0; x <= n; x++)
-{
 if (n > 0)
+{
+for (x = 0; x <= n; x++)
 {
 _putchar(' ');
 _putchar(92);
