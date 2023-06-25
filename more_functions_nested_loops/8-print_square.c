@@ -12,9 +12,7 @@ if (size > 0)
 for (x = 0; x <= size; x++)
 {
 for (y = 0; y <= size; y++)
-{
 _putchar(35);
-}
 else
 _putchar('\n');
 }
