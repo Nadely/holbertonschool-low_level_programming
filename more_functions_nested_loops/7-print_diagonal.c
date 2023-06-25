@@ -13,6 +13,7 @@ _putchar('\n');
 else
 {
 for (x = 0; x <= n; x++)
+{
 for (y = 0; y <= x; y++)
 {
 if (y < x)
@@ -20,6 +21,7 @@ _putchar(' ');
 {
 _putchar(92);
 _putchar ('\n');
+}
 }
 }
 }
