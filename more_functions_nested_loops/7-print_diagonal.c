@@ -18,7 +18,7 @@ for (y = 0; y <= x; y++)
 _putchar(92);
 _putchar ('\n');
 }
-_putchar(' ');
+_putchar(' ' = (x -1));
 }
 }
 }
