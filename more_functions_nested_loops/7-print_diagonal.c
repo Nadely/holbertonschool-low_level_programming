@@ -18,7 +18,7 @@ for (y = 0; y <= x; y++)
 {
 if ((y = x))
 _putchar(' ');
-{
+else
 _putchar(92);
 _putchar ('\n');
 }
