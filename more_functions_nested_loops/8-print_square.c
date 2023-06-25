@@ -15,7 +15,7 @@ if (size > 0)
 _putchar(35);
 }
 _putchar('\n');
-}
 else if (size <= 0)
 _putchar('\n');
+}
 }
