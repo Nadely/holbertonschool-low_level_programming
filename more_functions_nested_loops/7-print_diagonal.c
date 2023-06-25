@@ -15,7 +15,7 @@ _putchar(' ');
 _putchar(92);
 _putchar ('\n');
 }
-else (x <= 0)
+else (n <= 0)
 _putchar('\n');
 for (y = 0; y <= x; y++)
 _putchar(' ');
