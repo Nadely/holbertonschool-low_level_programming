@@ -16,8 +16,6 @@ _putchar ('\n');
 }
 for (y = 0; y <= x; y++)
 _putchar(' ');
-}
-{
 else if (n <= 0)
 _putchar('\n');
 }
