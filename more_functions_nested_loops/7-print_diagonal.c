@@ -17,10 +17,12 @@ for (x = 0; x <= n; x++)
 for (y = 0; y <= x; y++)
 {
 _putchar(' ');
+{
 if (y = x)
 {
 _putchar(92);
 _putchar ('\n');
+}
 }
 }
 }
