@@ -14,8 +14,10 @@ else
 for (x = 1; x <= size; x++)
 {
 for (y = 1; y <= size; y++)
-_putchar(35);
+if (y > x)
 _putchar('\n');
 }
+_putchar(35);
+_putchar('\n');
 }
 }
