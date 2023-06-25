@@ -11,9 +11,9 @@ if (size <= 0)
 _putchar('\n');
 else
 {
-for (x = 1; x <= size; x++)
-{
 for (y = 0; y <= size; y++)
+{
+for (x = 1; x <= size; x++)
 _putchar(35);
 _putchar('\n');
 }
