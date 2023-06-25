@@ -15,7 +15,7 @@ _putchar(35);
 for (y = 0; y <= size; y++)
 _putchar('\n');
 }
-else
+else if ( size <= 0)
 _putchar('\n');
 }
 }
