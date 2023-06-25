@@ -1,4 +1,4 @@
-#include "main.h"
+ #include "main.h"
 /**
 * print_diagonal - diagonal line
 * Return: diagonal line
@@ -16,7 +16,7 @@ for (x = 0; x <= n; x++)
 {
 for (y = 0; y <= x; y++)
 {
-if (y = x)
+  if ((y = x))
 _putchar(' ');
 else
 {
