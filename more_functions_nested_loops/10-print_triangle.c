@@ -15,11 +15,8 @@ for (y = 0; y <= size; y++)
 {
 for (x = 1; x <= size; x++)
 if (y < x)
-_putchar(' ');
-{
 _putchar(35);
 _putchar('\n');
-}
 }
 }
 }
