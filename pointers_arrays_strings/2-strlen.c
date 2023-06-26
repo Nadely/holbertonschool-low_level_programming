@@ -10,5 +10,5 @@ if (*s == 0)
 {
 return (0);
 }
-return _strlen(s + 1) + 1;
+ return (_strlen(s + 1) + 1);
 }
