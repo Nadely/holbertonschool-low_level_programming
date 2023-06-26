@@ -6,7 +6,9 @@
  */
 int _strlen(char *s)
 {
-_putchar([*s]);
+int l;
+for (l = 0; l[*s] != '\0'; l++)
+_putchar(l);
 {
 return (0);
 }
