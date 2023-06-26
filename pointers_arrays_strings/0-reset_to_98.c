@@ -4,7 +4,7 @@
 * Return: points to 98
 * @n : point
 */
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 {
 *n = 98;
 }
