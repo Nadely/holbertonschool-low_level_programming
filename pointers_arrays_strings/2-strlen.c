@@ -7,6 +7,7 @@
 int _strlen(char *s)
 {
 int l;
+char *s = 1;
 for (l = 0; *s ; l++)
 {
 return (l);
