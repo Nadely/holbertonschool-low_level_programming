@@ -10,7 +10,7 @@ if (*str == 0)
 _putchar('\n');
 else
 {
-_putchar(*str + 1);
+_putchar(*str);
 _putchar('\n');
 }
 }
