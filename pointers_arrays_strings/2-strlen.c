@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strlen - returns the length
- * Return: returns the length
- * @s: points
- */
+* _strlen - returns the length
+* Return: returns the length
+* @s: points
+*/
 int _strlen(char *s)
 {
-  return ((char *s));
+return (_strlen(char *s));
 }
