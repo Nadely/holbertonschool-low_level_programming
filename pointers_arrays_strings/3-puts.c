@@ -6,8 +6,12 @@
 */
 void _puts(char *str)
 {
-if (*str != 0)
-_putchar(*str);
-else if (*str == 0)
+int count;
+while (str != '\0')
+{
+count++;
+str++;
+}
+_putchar(count);
 _putchar('\n');
 }
