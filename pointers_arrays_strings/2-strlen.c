@@ -6,10 +6,9 @@
 */
 int _strlen(char *s)
 {
-int l;
-char *s = 1;
-for (l = 0; *s ; l++)
+if (*s == 0)
 {
-return (l);
+return (0);
 }
+return _strlen (s+1) + 1;
 }
