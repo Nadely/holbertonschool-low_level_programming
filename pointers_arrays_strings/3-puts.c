@@ -7,7 +7,7 @@
 void _puts(char *str)
 {
 int count;
-while (str != '\0')
+if (str != '\0')
 {
 count++;
 str++;
