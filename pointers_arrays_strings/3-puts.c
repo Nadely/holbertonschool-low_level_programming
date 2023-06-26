@@ -6,12 +6,10 @@
 */
 void _puts(char *str)
 {
-int c;
-for (c = 0; c <= str; c++)
 if (str == '\0')
-_putchar('\n')
+_putchar('\n');
 else
-_putchar(c);
+_putchar(str);
 {
 _putchar('\n');
 }
