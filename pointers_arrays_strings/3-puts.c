@@ -6,12 +6,13 @@
 */
 void _puts(char *str)
 {
-int count;
-if (str != '\0')
+int c;
+for (c = 0; c <= str; c++)
+if (str == '\0')
+_putchar('\n')
+else
+_putchar(c);
 {
-count++;
-str++;
-}
-_putchar(count);
 _putchar('\n');
+}
 }
