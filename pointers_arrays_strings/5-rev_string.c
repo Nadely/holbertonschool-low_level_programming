@@ -6,10 +6,9 @@
 */
 void rev_string(char *s)
 {
-int count;
-while (s != 0)
-{
-count--;
-s--;
-}
+int c;
+for (c = 0; s[c] != '\0'; c++)
+;
+for (; c >= 0; c--)
+;
 }
