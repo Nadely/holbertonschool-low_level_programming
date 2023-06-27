@@ -1,18 +1,20 @@
 #include "main.h"
 /**
- * print_rev - Reverse
- * Return: Reverse
- * @s: Pointer
- */
+* print_rev - Reverse
+* Return: Reverse
+* @s: Pointer
+*/
 void print_rev(char *s)
 {
 int c;
-for (c = *s; c >= 0; c--)
 if (*s == 0)
 _putchar('\n');
 else
+for (c = 0; s[c] != '\0'; c++)
+;
+for (; c >= 0 ;c--)
 {
-_putchar(*s - 1);
+_putchar(s[c]);
 }
 _putchar('\n');
 }
