@@ -7,12 +7,12 @@
 void _puts(char *str)
 {
 int c;
-for (c = 0; c <= *str; c++)
-if (*str == 0)
+if (*str == ' ')
 _putchar('\n');
 else
+for (c = 0; str[c] != '\0'; c++)
 {
-_putchar(*str);
-_putchar('\n');
+_putchar(c);
 }
+_putchar('\n');
 }
