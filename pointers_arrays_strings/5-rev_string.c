@@ -11,7 +11,7 @@ int i, l = _strlen(s);
 char tmp;
 if (l % 2 == 1)
 l--;
-for (i = 0; i <= l / 2; i++)
+for (i = 0; i < l / 2; i++)
 {
 tmp = s[i];
 s[i] = s[l];
