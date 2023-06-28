@@ -8,14 +8,12 @@
 void rev_string(char *s)
 {
 int i, l = _strlen(s);
-char tmp = 0;
-if (l % 2 == 1)
-l--;
+char tmp;
 for (i = 0; i <= l / 2; i++)
 {
 tmp = s[i];
-s[i] = s[l];
-s[l] = tmp;
+s[i] = s[l - 1];
+s[l - 1] = tmp;
 l--;
 }
 }
