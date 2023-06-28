@@ -13,7 +13,6 @@ for (l = 0; l[a] != '\0'; l++)
 if (l < n && n >= 0)
 {
 printf("%d", l[a]);
-printf(", ");
 l--;
 }
 if (l != n - 1)
