@@ -14,6 +14,7 @@ if (l < n && n >= 0)
 printf("%d", l[a]);
 if (l != n - 1)
 {
+printf(", ");
 l--;
 }
 printf("\n");
