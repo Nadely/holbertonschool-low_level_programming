@@ -12,7 +12,7 @@ if (l % 2 == 1)
 {
 l++;
 }
-for (i = 0; str[i] != '\0'; i++)
+for (i = 1; str[i] != '\0'; i++)
 {
 if (i >= l / 2)
 _putchar(str[i]);
