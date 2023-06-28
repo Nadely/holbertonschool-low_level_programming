@@ -11,7 +11,7 @@ if (*s == 0)
 _putchar('\n');
 else
 for (c = 0; s[c] != '\0'; c++)
-s[c] -1;
+s[c] - 1;
 for (; c >= 0 ; c--)
 {
 _putchar(s[c]);
