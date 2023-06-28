@@ -15,7 +15,7 @@ l++;
 for (i = 0; str[i] != '\0'; i++)
 {
 if (i >= l / 2)
-_putchar(str[i]);
+_putchar(str[i] + 1);
 }
 _putchar('\n');
 }
