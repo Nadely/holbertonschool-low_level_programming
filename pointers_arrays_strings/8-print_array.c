@@ -13,11 +13,11 @@ for (l = 0; l[a] != '\0'; l++)
 if (l < n && n >= 0)
 {
 printf("%d", l[a]);
-l--;
 }
 if (l != n - 1)
 {
 printf(", ");
+l--;
 }
 printf("\n");
 }
