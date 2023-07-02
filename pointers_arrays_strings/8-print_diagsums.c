@@ -15,5 +15,5 @@ for (i = 0; i <= (size * size); i = i + size + 1)
 k = k + a[i];
 for (j = size - 1; j <= (size * size) - size; j = j + size - 1)
 l = l + a[j];
-printf ("%d, %d \n", k, l);
+printf("%d, %d \n", k, l);
 }
