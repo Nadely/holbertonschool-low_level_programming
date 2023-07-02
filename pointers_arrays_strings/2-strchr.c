@@ -1,5 +1,4 @@
 #include "main.h"
-#include "string.h"
 /**
 * *_strchr - locates
 * Return: locates
@@ -8,6 +7,15 @@
 */
 char *_strchr(char *s, char c)
 {
-	char *a = strchr(s, (int) c);
-		return (a);
+	char *a = '\0';
+	int i;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == c)
+		{
+			a = &s[i];
+			break;
+		}
+	}
+	return (a);
 }
