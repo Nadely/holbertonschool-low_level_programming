@@ -18,7 +18,6 @@ else if (s[i] == c)
 a = &s[i];
 break;
 }
-return (a);
 }
-return (0);
+return (a);
 }
