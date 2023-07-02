@@ -16,7 +16,7 @@ for (j = 0; s[j] != '\0'; j++)
 {
 if (accept[i] == s[j])
 {
-if(j <= p)
+if (j <= p)
 {
 p = j;
 f = 1;
