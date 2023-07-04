@@ -2,8 +2,6 @@
 /**
  * _sqrt : first fonction
  * Return: first fonction
- * _sqrt_recursion - Natural square root
- * Return: Natural square root
  * @n: numbers
  * @i: number
  */
@@ -16,6 +14,11 @@ int _sqrt(int n, int i)
 		return (i);
 	return (_sqrt(i + 1, n));
 }
+/**
+* _sqrt_recursion - Natural square root
+* Return: Natural square root
+* @n: numbers
+*/
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
