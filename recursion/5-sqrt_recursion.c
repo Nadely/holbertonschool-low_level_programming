@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _sqrt : first fonction
+ * _sqrt - first fonction
  * Return: first fonction
  * @n: numbers
  * @i: number
