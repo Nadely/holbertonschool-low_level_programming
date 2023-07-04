@@ -7,7 +7,6 @@
  */
 int _sqrt(int n, int i)
 {
-	i = 1;
 	if (i * i > n)
 		return (-1);
 	else if (i * i == n)
