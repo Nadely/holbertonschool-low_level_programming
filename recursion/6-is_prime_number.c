@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * is_prime - prime
+ * _prime - prime
  * Return: prime
  * @n: numbers
  * @d: num
