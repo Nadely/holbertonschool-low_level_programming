@@ -2,13 +2,15 @@
 /**
  * main - proto
  * Return: proto
+ * @argc: argument
+ * @argv: argument
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	for (i = 0; i < argc; i++)
+	int count;
+	for (count = 0; count < argc; count++)
 	{
-		_putchar(*argv[i]);
+		_putchar(*argv[count]);
 	}
 	_putchar('\n');
 	return (0);
