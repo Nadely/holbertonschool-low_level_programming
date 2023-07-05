@@ -3,7 +3,7 @@
  * main - proto
  * Return: proto
  */
-int main(int argc, char *argv[])
+int _putchar(int argc, char c)
 {
 	_putchar(argv);
 	_putchar('\n');
