@@ -2,6 +2,8 @@
 /**
  * main - proto
  * Return: proto
+ * @argc: argument
+ * @argv: argument
  */
 int main(int argc, char *argv[])
 {
