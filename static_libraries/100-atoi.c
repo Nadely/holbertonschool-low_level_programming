@@ -6,7 +6,7 @@
 */
 int _atoi(char *s)
 {
-if (c >= 65 && c <= 90)
+if (*s >= 65 && *s <= 90)
 return (1);
 else
 return (0);
