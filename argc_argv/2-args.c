@@ -7,10 +7,11 @@
 */
 int main(int argc, char *argv[])
 {
-	int c;
-	for (c = 0; c < argc; c++)
+	int i, j;
+	for (i = 0; i < argc; i++)
+	for (j = 0; argv[i][j] != '\0'; j++)
 	{
-		_putchar(*argv[c]);
+		_putchar(argv[i][j]);
 	}
 	_putchar('\n');
 	return (0);
