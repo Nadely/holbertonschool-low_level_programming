@@ -8,10 +8,10 @@
 int main(int argc, char *argv[])
 {
 	int count;
-	if (argc > 1)
 	for (count = 0; count < argc; count++)
 	{
-		_putchar(*argv[count]);
+		int i = _atoi(argv[count]);
+		_putchar(i);
 	}
 	_putchar('\n');
 	return (0);
