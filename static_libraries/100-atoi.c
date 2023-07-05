@@ -4,7 +4,7 @@
 * Return: uppercase character
 * @c: letter
 */
-int _isupper(int c)
+int _atoi(char *s)
 {
 if (c >= 65 && c <= 90)
 return (1);
