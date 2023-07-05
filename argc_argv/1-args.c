@@ -10,8 +10,7 @@ int main(int argc, char *argv[])
 	int count;
 	for (count = 0; count < argc; count++)
 	{
-		int i = _atoi(argv[count]);
-		_putchar(i);
+		_putchar(*argv[count]);
 	}
 	_putchar('\n');
 	return (0);
