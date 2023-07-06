@@ -19,7 +19,7 @@ return (1);
 i = atoi(argv[1]);
 j = atoi(argv[2]);
 }
-r = i * j;
+r = (i * j);
 printf("%d\n", r);
 return (0);
 }
