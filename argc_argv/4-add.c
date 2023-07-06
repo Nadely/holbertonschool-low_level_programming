@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 				return 1;
 			}
 		}
-		n = atoi(argv[i]);
+		n = atoi(argv[i] - 1);
 		r = n + n;
 	}
 
