@@ -8,8 +8,8 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	else
-		return (_sqrt(1, n));
+	if (n == 0 || n == 1)
+		return (n);
 }
 /**
  * _sqrt - first fonction
@@ -17,11 +17,16 @@ int _sqrt_recursion(int n)
  * @n: numbers
  * @i: number
  */
-int _sqrt(int n, int i)
+int _sqrt(int n, int i, int f, int m)
 {
-	if (i * i > n)
+	if (i > f)
 		return (-1);
-	else if (i * i == n)
-		return (i);
-	return (_sqrt(i + 1, n));
+	m = (i + f) / 2
+	{
+	if (m == n / m && n % m == 0)
+		return (m);
+	if (m < n / m)
+		return (_sqrt(n, m + 1, f));
+	}
+	return _sqrt(n, i, m - 1);
 }
