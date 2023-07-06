@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 			}
 			n = n * 10 + (argv[i][j] - '0');
 		}
+		if (n >= 0)
 		r = n + n;
 	}
 
