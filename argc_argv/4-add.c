@@ -26,9 +26,8 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return 1;
 			}
-			n = n * 10 + (argv[i][j] - '0');
 		}
-		if (n >= 0)
+		n = atoi(argv[i]);
 		r = n + n;
 	}
 
