@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return 1;
 			}
-			n = n * 10 + (argv[i][j] - '0');
 		}
 		r += n;
 	}
