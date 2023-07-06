@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - proto
  * Return: proto
@@ -10,7 +11,7 @@ int main(int argc, char *argv[])
 	int count;
 	for (count = 0; count < argc; count++)
 	{
-		_putchar(*argv[count]);
+		printf("%d", *argv[count]);
 	}
 	_putchar('\n');
 	return (0);
