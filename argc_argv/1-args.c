@@ -8,11 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int count;
-	for (count = 0; count < argc; count++)
-	{
-		printf("%d", *argv[count]);
-	}
-	_putchar('\n');
+	int c;
+	for (c = 0; c < argc; c++)
+		printf("%s\n", argv[c]);
 	return (0);
 }
