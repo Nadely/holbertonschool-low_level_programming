@@ -6,10 +6,8 @@
  * @argc: argument
  * @argv: argument
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv __attribute__((unused)))
 {
-	int c;
-	for (c = 0; c < argc; c++)
-		printf("%s\n", argv[c]);
+	printf("%d\n", argc);
 	return (0);
 }
