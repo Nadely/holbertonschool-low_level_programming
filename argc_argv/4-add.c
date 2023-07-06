@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 				return 1;
 			}
 		}
-		r += n;
+		r = n + n;
 	}
 
 	printf("%d\n", r);
