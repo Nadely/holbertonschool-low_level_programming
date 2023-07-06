@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * main - proto
 * Return: proto
@@ -15,8 +16,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	{
-		i = _atoi(argv[1]);
-		j = _atoi(argv[2]);
+		i = atoi(argv[1]);
+		j = atoi(argv[2]);
 	}
 	r = i * j;
 	printf("%d\n", r);
