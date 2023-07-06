@@ -1,24 +1,35 @@
-int _atoi(char* str)
+#include <stdio.h>
+int _atoi(char *s)
 {
 	int sign = 1;
 	int result = 0;
-	int i = 0;
-	while(str[i] == ' ')
-	{
-		i++;
-	}
-	if(str[i] == '-')
+	if (*s == '-')
 	{
 		sign = -1;
-		i++;
+		s++;
 	}
-	else if(str[i] == '+'){
-		i++;
+	if (*s == '+')
+	{
+		s++;
 	}
-	while(str[i] != '\0' && str[i] >= '0' && str[i] <= '9'){
-		result = result * 10 + (str[i] - '0');
-		i++;
+	while (*s != '\0')
+	{
+		if (*s >= '0' && *s <= '9') {
+			result = result * 10 + (*s - '0');
+		}
+		else
+		{
+			break;
+		}
+		s++;
 	}
 
 	return result * sign;
+}
+int main()
+{
+	char string[] = "12345";
+	int number = _atoi(string);
+	printf("Le nombre converti est : %d\n", number);
+	return 0;
 }
