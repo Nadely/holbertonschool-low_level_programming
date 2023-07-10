@@ -1,10 +1,20 @@
 #include "main.h"
 #include <stdlib.h>
 /**
+* _strlen - lenght
 * _strdup - newly allocated
 * Return: newly allocated
 * @str: pointer
 */
+unsigned int _strlen(char *str)
+{
+	unsigned int l;
+for (l= 0; str[l] != '\0'; l++)
+{
+	return (l);
+}
+return (0);
+}
 char *_strdup(char *str)
 {
 	unsigned int i;
@@ -18,7 +28,7 @@ char *_strdup(char *str)
 	{
 		for (i = 0; str[i] != '\0'; i++)
 		{
-			array[i] = *str;
+			array[i] = str[i];
 		}
 		return (array);
 	}
