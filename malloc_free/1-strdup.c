@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
 * _strlen - lenght
@@ -10,9 +11,9 @@ unsigned int _strlen(char *str)
 	unsigned int l;
 for (l = 0; str[l] != '\0'; l++)
 {
-	return (l);
+	continue;
 }
-return (0);
+	return (l);
 }
 /**
 * _strdup - newly allocated
@@ -34,6 +35,7 @@ char *_strdup(char *str)
 		{
 			array[i] = str[i];
 		}
+		array[i] = '\0';
 		return (array);
 	}
 	return (NULL);
