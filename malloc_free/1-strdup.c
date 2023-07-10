@@ -2,19 +2,23 @@
 #include <stdlib.h>
 /**
 * _strlen - lenght
-* _strdup - newly allocated
-* Return: newly allocated
+* Return: lenght
 * @str: pointer
 */
 unsigned int _strlen(char *str)
 {
 	unsigned int l;
-for (l= 0; str[l] != '\0'; l++)
+for (l = 0; str[l] != '\0'; l++)
 {
 	return (l);
 }
 return (0);
 }
+/**
+* _strdup - newly allocated
+* Return: newly allocated
+* @str: pointer
+*/
 char *_strdup(char *str)
 {
 	unsigned int i;
