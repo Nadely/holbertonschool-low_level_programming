@@ -9,6 +9,9 @@ unsigned int _strlen(char *str)
 {
 	unsigned int l;
 for (l = 0; str[l] != '\0'; l++)
+{
+	return (l);
+}
 return (0);
 }
 /**
@@ -24,7 +27,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	array = malloc((_strlen(str) + 1) * sizeof(str));
+	array = malloc((_strlen(str) + 1) * sizeof(char));
 	if (array != NULL)
 	{
 		for (i = 0; str[i] != '\0'; i++)
