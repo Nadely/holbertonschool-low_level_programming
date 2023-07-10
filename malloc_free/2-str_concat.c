@@ -22,7 +22,7 @@ return (l);
 */
 char *str_concat(char *s1, char *s2)
 {
-unsigned i, j;
+unsigned int i, j;
 char *array;
 if (s1 == NULL)
 {
