@@ -25,16 +25,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j;
 	char *array;
-	unsigned int l = _strlen(s1);
-	unsigned int m = _strlen(s2);
+	unsigned int l = 0;
+	unsigned int m = 0;
 
-	if (s1 == NULL)
-		s1 = ("");
-	if (s2 == NULL)
-		s2 = ("");
+	if (s1 != NULL)
+		l = _strlen(s1);
+	if (s2 != NULL)
+		m = _strlen(s2);
 	if (n >= m)
 		n = m;
-	array = malloc((l + n + 1)* sizeof(char));
+	array = malloc((l + n + 1) * sizeof(char));
 	if (array == NULL)
 		return (NULL);
 	for (i = 0; i < l; i++)
