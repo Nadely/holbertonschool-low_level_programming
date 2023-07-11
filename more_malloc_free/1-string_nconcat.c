@@ -27,17 +27,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *array;
 
 	if (s2 == NULL)
-		return ('\0');
+		return ("");
 	if (n >= _strlen(s2))
-		return (s2);
-	array = malloc((_strlen(s1) + _strlen(s2) + 1) * sizeof(char));
+		n = _strlen(s2);
+	array = malloc((_strlen(s1) + n + 1) * sizeof(char));
 	if (array == NULL)
 		return (NULL);
 	for (i = 0; i < _strlen(s1); i++)
 	{
 		array[i] = s1[i];
 	}
-	for (j = 0; j < _strlen(s2); j++)
+	for (j = 0; j < n; j++)
 	{
 		array[i + j] = s2[j];
 	}
