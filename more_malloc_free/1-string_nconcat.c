@@ -28,8 +28,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int l = _strlen(s1);
 	unsigned int m = _strlen(s2);
 
+	if (s1 == NULL)
+		return ("");
 	if (s2 == NULL)
-		return (NULL);
+		return ("");
 	if (n >= m)
 		n = m;
 	array = malloc((l + n + 1) * sizeof(char));
