@@ -15,7 +15,7 @@ if (s[i] == '\0')
 return (0);
 else
 if (s[i] == c)
-{ 
+{
 a = &s[i];
 break;
 }
