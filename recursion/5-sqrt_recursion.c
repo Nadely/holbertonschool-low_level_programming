@@ -11,7 +11,7 @@ int _sqrt(int n, int i)
 		return (-1);
 	else if (i * i == n)
 		return (i);
-	return (_sqrt(i + 1, n));
+	return (_sqrt(n, i + 1));
 }
 /**
  * _sqrt_recursion - Natural square root
