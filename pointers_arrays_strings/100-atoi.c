@@ -22,9 +22,12 @@ int _atoi(char *s)
 	{
 		s++;
 	}
-	while (*s >= '0' && *s <= '9')
+	while (*s != '\0')
+	{
+		if (*s >= '0' && *s <= '9')
 	{
 		result = result * 10 + (*s - '0');
+	}
 		s++;
 	}
 	return (sign * result);
