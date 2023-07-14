@@ -8,9 +8,9 @@
 int _atoi(char *s)
 {
 	int signe = 1;
-        int resultat = 0;
-        int i = 0;
-        int chiffre;
+	int resultat = 0;
+	int i = 0;
+	int chiffre;
 
 	if (s == 0)
 		return (0);
