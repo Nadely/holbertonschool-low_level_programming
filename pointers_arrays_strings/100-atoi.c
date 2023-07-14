@@ -29,5 +29,9 @@ int _atoi(char *s)
 		result = result * 10 + (s[i] - '0');
 		i++;
 	}
+	if (s[i] >= 'A' && s[i] <= 'Z')
+	{
+		return result;
+	}
 	return (result * sign);
 }
