@@ -27,16 +27,15 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 			break;
 		chiffre = s[i] - '0';
-
 		if (resultat > (INT_MAX - chiffre) / 10)
-			{
-				if (signe == 1)
-					return (INT_MAX);
-				else
-					return (INT_MIN);
-			}
-			resultat = resultat * 10 + chiffre;
-			i++;
+		{
+			if (signe == 1)
+				return (INT_MAX);
+			else
+				return (INT_MIN);
+		}
+		resultat = resultat * 10 + chiffre;
+		i++;
 	}
 	return (signe * resultat);
 }
