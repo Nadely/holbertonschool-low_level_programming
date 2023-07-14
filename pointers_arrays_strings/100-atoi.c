@@ -1,5 +1,5 @@
 #include "main.h"
-0;10;1c#include <limits.h>
+#include <limits.h>
 /**
  * _atoi - fonction
  * Return: fonction
