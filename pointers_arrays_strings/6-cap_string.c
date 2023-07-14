@@ -19,7 +19,19 @@ char *cap_string(char *s)
 				capitalize = 0;
 			}
 		}
-		else
+		else if (s[i] == ' ' ||
+             s[i] == '\t' ||
+             s[i] == '\n' ||
+             s[i] == ',' ||
+             s[i] == ';' ||
+             s[i] == '.' ||
+             s[i] == '!' ||
+             s[i] == '?' ||
+             s[i] == '"' ||
+             s[i] == '(' ||
+             s[i] == ')' ||
+             s[i] == '{' ||
+             s[i] == '}')
 		{
 			capitalize = 1;
 		}
