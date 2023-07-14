@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 /**
  * _atoi - fonction
  * Return: fonction
@@ -9,29 +8,24 @@ int _atoi(char *s)
 {
 	int result = 0;
 	int sign = 1;
-	int i = 0;
 
-	while (s[i] == ' ')
+	while (*s == ' ')
 	{
-		i++;
+		s++;
 	}
-	if (s[i] == '-')
+	if (*s == '-')
 	{
 		sign = -1;
-		i++;
+		s++;
 	}
-	else if (s[i] == '+')
+	else if (*s == '+')
 	{
-		i++;
+		s++;
 	}
-	while (s[i] >= '0' && s[i] <= '9')
+	while (*s >= '0' && *s <= '9')
 	{
-		result = result * 10 + (s[i] - '0');
-		i++;
+		result = result * 10 + (*s - '0');
+		s++;
 	}
-	if (s[i] >= 'A' && s[i] <= 'Z')
-	{
-		return (result);
-	}
-	return (result * sign);
+	return (sign * result);
 }
