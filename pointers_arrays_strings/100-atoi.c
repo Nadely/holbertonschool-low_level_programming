@@ -7,12 +7,15 @@
  */
 int _atoi(char *s)
 {
+	int signe = 1;
+        int resultat = 0;
+        int i = 0;
+        int chiffre;
+
 	if (s == 0)
 		return (0);
-	int signe = 1;
-	int resultat = 0;
-	int i = 0;
-
+	while (s[i] == ' ')
+		i++;
 	while (s[i] == '-' || s[i] == '+')
 	{
 		if (s[i] == '-')
@@ -22,9 +25,10 @@ int _atoi(char *s)
 	while (s[i] != '\0')
 	{
 		if (s[i] >= '0' && s[i] <= '9')
-		{
-			int chiffre = s[i] - '0';
-			if (resultat > (INT_MAX - chiffre) / 10)
+			break;
+		chiffre = s[i] - '0';
+
+		if (resultat > (INT_MAX - chiffre) / 10)
 			{
 				if (signe == 1)
 					return (INT_MAX);
@@ -32,10 +36,7 @@ int _atoi(char *s)
 					return (INT_MIN);
 			}
 			resultat = resultat * 10 + chiffre;
-		}
-		else
-			break;
-		i++;
+			i++;
 	}
 	return (signe * resultat);
 }
