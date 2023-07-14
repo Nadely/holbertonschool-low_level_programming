@@ -35,6 +35,10 @@ char *cap_string(char *s)
 		{
 			capitalize = 1;
 		}
+		else
+		{
+			capitalize = 0;
+		}
 		i++;
 	}
 	return (s);
