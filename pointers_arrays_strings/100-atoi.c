@@ -1,5 +1,5 @@
 #include "main.h"
-#include <limits.h>
+0;10;1c#include <limits.h>
 /**
  * _atoi - fonction
  * Return: fonction
@@ -31,7 +31,7 @@ int _atoi(char *s)
 	}
 	if (s[i] >= 'A' && s[i] <= 'Z')
 	{
-		return result;
+		return (result);
 	}
 	return (result * sign);
 }
