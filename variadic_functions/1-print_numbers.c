@@ -11,16 +11,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list complet; /* Initialize the argument list*/
 	unsigned int number;
-
-	if (separator == NULL)
-	printf("%s", separator);
-
+	
 	va_start(complet, n); /* Get the next argument value*/
 
 	for (number = 0; number < n; number++)
 	{
-		printf ("%d", va_arg(complet, int));
-		if (number != n - 1)
+		printf("%d", va_arg(complet, int));
+		if (separator == NULL && number != n - 1)
 		printf("%s", separator);
 	}
 
