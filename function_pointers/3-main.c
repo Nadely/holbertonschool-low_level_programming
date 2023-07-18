@@ -23,6 +23,12 @@ int main(int argc, char **argv)
 	operation = argv[2];
 	num2 = atoi(argv[3]);
 
+	if (get_op_func(operation) == NULL || operation[1] != '\0')
+	{
+		printf("Error\n");
+		return (99);
+	}
+
 	if ((*operation == '/' || *operation == '%') && num2 == 0)
 	{
 		printf("Error\n");
@@ -32,10 +38,4 @@ int main(int argc, char **argv)
 	result = get_op_func(operation)(num1, num2);
 	printf("%d\n", result);
 	return (EXIT_SUCCESS);
-
-	if (!result)
-	{
-		printf("Error\n");
-		return (99);
-	}
 }
