@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (EXIT_FAILURE);
+		return (argc);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	if (!operation)
 	{
 		printf("Error\n");
-		return (EXIT_FAILURE);
+		return (!operation);
 	}
 	result = operation(num1, num2);
 	printf("%d\n", result);
