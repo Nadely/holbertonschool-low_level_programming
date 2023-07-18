@@ -23,13 +23,7 @@ int main(int argc, char **argv)
 	operation = argv[2];
 	num2 = atoi(argv[3]);
 
-	if (!operation)
-	{
-		printf("Error\n");
-		return (99);
-	}
-
-	if((*operation == '/' || *operation == '%') && num2 == 0)
+	if ((*operation == '/' || *operation == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		return (100);
