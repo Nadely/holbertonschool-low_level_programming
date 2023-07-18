@@ -29,6 +29,12 @@ int main(int argc, char **argv)
 		return (100);
 	}
 
+	if (!operation)
+	{
+		printf("Error\n");
+		return (99);
+	}
+
 	result = get_op_func(operation)(num1, num2);
 	printf("%d\n", result);
 	return (EXIT_SUCCESS);
