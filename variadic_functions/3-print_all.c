@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
-/*
+/**
 * printf_s - print string
 * @all: va_list argument
 * Return: print string
@@ -10,13 +10,11 @@
 void printf_s(va_list all)
 {
 	char *s = va_arg(all, char *);
-	if (s == NULL)
-	printf("(nil)");
-	else
-	printf("%s", s);
+
+	printf("%s", (s == NULL) ? "(nil)" : s);
 }
 
-/*
+/**
 * printf_c - print char
 * @all: va_list argument
 * Return: print char
@@ -24,10 +22,11 @@ void printf_s(va_list all)
 void printf_c(va_list all)
 {
 	char c = va_arg(all, int);
+
 	printf("%c", c);
 }
 
-/*
+/**
 * printf_i - print int
 * @all: va_list argument
 * Return: print int
@@ -35,10 +34,11 @@ void printf_c(va_list all)
 void printf_i(va_list all)
 {
 	int i = va_arg(all, int);
+
 	printf("%d", i);
 }
 
-/*
+/**
 * printf_f - print float
 * @all: va_list argument
 * Return: print float
@@ -46,6 +46,7 @@ void printf_i(va_list all)
 void printf_f(va_list all)
 {
 	double f = va_arg(all, double);
+
 	printf("%f", f);
 }
 
@@ -75,7 +76,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *(_print[j].print))
 			{
-				printf ("%s", separator);
+				printf("%s", separator);
 				_print[j].func(all);
 				separator = ", ";
 			}
