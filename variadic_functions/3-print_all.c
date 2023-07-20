@@ -7,7 +7,7 @@
 * @all: va_list argument
 * Return: print string
 */
-void printf_s (va_list all)
+void printf_s(va_list all)
 {
 	char *s = va_arg(all, char *);
 	if (s == NULL)
@@ -21,7 +21,7 @@ void printf_s (va_list all)
 * @all: va_list argument
 * Return: print char
 */
-void printf_c (va_list all)
+void printf_c(va_list all)
 {
 	char c = va_arg(all, int);
 	printf("%c", c);
@@ -32,7 +32,7 @@ void printf_c (va_list all)
 * @all: va_list argument
 * Return: print int
 */
-void printf_i (va_list all)
+void printf_i(va_list all)
 {
 	int i = va_arg(all, int);
 	printf("%d", i);
@@ -43,7 +43,7 @@ void printf_i (va_list all)
 * @all: va_list argument
 * Return: print float
 */
-void printf_f (va_list all)
+void printf_f(va_list all)
 {
 	double f = va_arg(all, double);
 	printf("%f", f);
