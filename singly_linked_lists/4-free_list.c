@@ -16,6 +16,9 @@ void free_list(list_t *head)
 	list_t *node = head;
 	list_t *next;
 
+	if (node->str == NULL)
+		return;
+
 	if (node != NULL)
 	{
 		next = node->next;
