@@ -7,7 +7,7 @@
  * free_list - Free
  * @head: Pointer to pointer
  *
- * Description: new node
+ * Description: free node
  * Return: Free
  */
 
