@@ -5,7 +5,7 @@
  * print_list - prints all the element
  * @h: Pointer Struct list
  *
- * Description: singly linked list node structure
+ * Description: print whith struct
  * Return: print all the element
  */
 
