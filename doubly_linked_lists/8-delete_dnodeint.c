@@ -17,23 +17,27 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	unsigned int count = 0;
 
 	if (*head == NULL) /*Vérifie si la liste est vide*/
-		return (-1); /*Echec de suppression*/
+		return (-1);   /*Echec de suppression*/
 
 	if (index == 0) /*Suppression du premier nœud*/
 	{
-		*head = node->next ; /*Mise à jour du pointeur head sur le suivant*/
+		*head = node->next; /*Mise à jour du pointeur head sur le suivant*/
+		if (node->next != NULL)
+		{
+			node->next->prev = node->prev;
+		}
 		free(node); /* Libération de la mémoire*/
 		return (1); /*Suppression réussie*/
 	}
-/*Parcours de la liste jusqu'à l'index donné*/
+	/*Parcours de la liste jusqu'à l'index donné*/
 	while (node != NULL && count < index)
 	{
 		node = node->next;
 		count++;
 	}
-/*Vérifie si l'index est supérieur à la taille de la liste*/
+	/*Vérifie si l'index est supérieur à la taille de la liste*/
 	if (node == NULL)
-	return (-1); /*Echec de suppression*/
+		return (-1); /*Echec de suppression*/
 
 	node->prev->next = node->next; /*Contournement du nœud à supprimer*/
 
@@ -41,7 +45,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		node->next->prev = node->prev;
 	}
-
 	free(node); /* Libération de la mémoire*/
 	return (1); /*Suppression réussie*/
 }
