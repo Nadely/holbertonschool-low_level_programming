@@ -24,7 +24,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		*head = node->next; /*Mise à jour du pointeur head sur le suivant*/
 		if (node->next != NULL)
 		{
-			node->next->prev = node->prev; /* le pointeur prècédent du noeud suivant reprends le pointeur du noeud actuel*/
+			node->next->prev = node->prev;
 		}
 		free(node); /* Libération de la mémoire*/
 		return (1); /*Suppression réussie*/
