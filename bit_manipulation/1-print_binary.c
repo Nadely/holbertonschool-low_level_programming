@@ -9,7 +9,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int f = 0; /*Indicateur permettant de déterminer si les zéros initiaux doivent être imprimés*/
+	int f = 0; /*déterminer si les zéros initiaux doivent être imprimés*/
 	int i;
 
 	if (n == 0)
@@ -17,12 +17,15 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-
-	for (i = sizeof(n) * 8 - 1; i >= 0; i--) /*sizeof(n) * 8 - 1 : Cette partie du code utilise l'opérateur sizeof pour obtenir la taille en octets de la variable n et le multiplie par 8 pour obtenir la taille en bits. Ensuite, on soustrait 1 pour obtenir le numéro du bit le plus significatif (le bit à l'indice le plus élevé)*/
-		if ((n >> i) & 1)					 /*si le résultat de cette comparaison est vrai (c'est-à-dire que le bit le plus à droite est un 1), alors l'expression ((n >> i) & 1) retournera un résultat de 1. Sinon, elle retournera un résultat de 0*/
+/*sizeof(n) * 8 - 1:obtenir la taille en octets de n et * 8 pour avoir les bits.
+puis, -1 pour obtenir le numéro du bit le plus élevé*/
+	for (i = sizeof(n) * 8 - 1; i >= 0; i--)
+		if ((n >> i) & 1)/*si le résultat de cette comparaison est vrai,
+alors l'expression ((n >> i) & 1) retournera un résultat de 1. Sinon 0*/
 		{
 			_putchar('1');
-			f = 1; /*Définir le drapeau pour indiquer que les zéros initiaux doivent être imprimés*/
+			f = 1;
+/*Définir le drapeau pour indiquer que les 0 initiaux doivent être imprimés*/
 		}
 		else if (f) /*Si l'indicateur est activé, imprimer 0*/
 			_putchar('0');
