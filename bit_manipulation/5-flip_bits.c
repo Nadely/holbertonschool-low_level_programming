@@ -10,16 +10,16 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int d = n ^ m; /*trouver les bits différent entre les 2*/
+	unsigned int d = ((n ^ m) * 8); /*trouver les bits différent entre les 2*/
 	unsigned int count = 0;
 
 	while (d > 0)
 	{
 		/*on verifie si le bits est différent*/
 		if (d & 1)
-		count++; /*si oui on incémente*/
+			count++; /*si oui on incémente*/
 
-		d >>=1;
+		d >>= 1;
 		/*on décale le nombre pour voir s'il est différent avec le suivant*/
 	}
 	return (count); /* on revoie le nombre de bits différent en n et m*/
