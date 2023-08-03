@@ -18,7 +18,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	for (i = 0; i <= index; i++)
 	{
-		n[i] |= m;
+		n[i] |= m; /*opérateur de bit à bit [| or]*/
 		i++;
 	}
 
