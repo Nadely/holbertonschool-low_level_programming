@@ -10,8 +10,8 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int d = ((n ^ m) * 2); /*trouver les bits différent entre les 2*/
-	unsigned int count = 0;
+	unsigned long int d = n ^ m; /*trouver les bits différent entre les 2*/
+	unsigned long int count = 0;
 
 	while (d > 0)
 	{
