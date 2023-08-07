@@ -3,11 +3,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/*
+/**
 * read_textfile - reads a text file and prints it to the POSIX standard output
 * @filename: pointer
-* @letters : text
+* @letters: text
 * Description: reads a text file and prints it to the POSIX standard output
+*
 * Return: reads a text file and prints it to the POSIX standard output
 */
 
