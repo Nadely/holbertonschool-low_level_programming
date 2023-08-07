@@ -6,13 +6,13 @@
 #include <fcntl.h>
 
 /**
-* create_file - Create a function that creates a file
-* @filename: pointer file
-* @text_content: pointer text
-* Description: Create a function that creates a file
-*
-* Return: Create a function that creates a file
-*/
+ * create_file - Create a function that creates a file
+ * @filename: pointer file
+ * @text_content: pointer text
+ * Description: Create a function that creates a file
+ *
+ * Return: Create a function that creates a file
+ */
 
 int create_file(const char *filename, char *text_content)
 {
@@ -26,18 +26,13 @@ int create_file(const char *filename, char *text_content)
 	if (file == -1)
 		return (-1);
 
-	if (text_content == NULL)
-	{
-		close(file);
-		return (1);
-	}
-
 	if (write_file == -1 || write_file != len)
 	{
 		close(file);
 		return (-1);
 	}
 
+	if (text_content != NULL)
 	close(file);
 	return (1);
 }
