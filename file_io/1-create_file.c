@@ -17,6 +17,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+/*créer le fichier s'il n'existe pas, l'ouvre et le tronque s'il existe déjà*/
 	int len = 0;
 	int write_file = 0;
 
@@ -27,9 +28,11 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content != NULL)
+/*Si le paramètre du contenu texte est différent de nul*/
 	{
-		len = strlen(text_content);
+		len = strlen(text_content);/*obtenir la longueur du texte*/
 		write_file = write(file, text_content, len);
+		/*écriture du contenu dans le fichier*/
 	}
 	close(file);
 
