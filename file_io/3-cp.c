@@ -6,7 +6,7 @@
 #include <fcntl.h>
 
 /**
- * cp_code - copy file
+ * main - copy file
  * @argc: argument
  * @argv: double pointer
  * Description: copy file
@@ -14,7 +14,7 @@
  * Return: copy file
  */
 
-int get_cp_code(int argc, int *argv[])
+int main(int argc, int *argv[])
 {
 	char temp[1024];
 	int file_from, file_to, read_file, write_file;
