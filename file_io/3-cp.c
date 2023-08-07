@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage : cp filefrom file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 
 	if (close(file_from) == -1 || close(file_to) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error : Can't close fd\n");
+		dprintf(STDERR_FILENO, "Error: Can't close file\n");
 		exit(100);
 	}
 
