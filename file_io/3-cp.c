@@ -14,7 +14,7 @@
  * Return: copy file
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	char temp[1024];
 	int file_from, file_to, read_file, write_file;
