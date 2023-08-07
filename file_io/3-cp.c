@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 #include <fcntl.h>
 
 /**
@@ -15,42 +16,49 @@
 
 int main(int argc, char *argv[])
 {
-	char buffer[1024];
-	int file_from, file_to, bytes_read, bytes_written;
+	char temp[1024];
+	int file_from, file_to, read_file, write_file;
 
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
+
 	file_from = open(argv[1], O_RDONLY);
-	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	if (file_from == -1 || file_to == -1)
+	if (file_from == -1)
 	{
-		if (file_from != -1)
-			close(file_from);
-		dprintf(STDERR_FILENO, "Error: Can't open or create file\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	while ((bytes_read = read(file_from, buffer, sizeof(buffer))) > 0)
+
+	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	if (file_to == -1)
 	{
-		bytes_written = write(file_to, buffer, bytes_read);
-		if (bytes_written == -1 || bytes_written != bytes_read)
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+	}
+
+	while ((read_file = read(file_from, temp, sizeof(temp))) > 0)
+	{
+		write_file = write(file_to, temp, read_file);
+		if (write_file == -1 || write_file != read_file)
 		{
-			close(file_from);
-			close(file_to);
-			dprintf(STDERR_FILENO, "Error: Can't write to file\n");
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	}
-	if (bytes_read == -1)
+
+	if (read_file == -1)
 	{
-		close(file_from);
-		close(file_to);
-		dprintf(STDERR_FILENO, "Error: Can't read from file\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	close(file_from);
-	close(file_to);
+
+	if (close(file_from) == -1 || close(file_to) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd\n");
+		exit(100);
+	}
 	return (0);
 }
