@@ -10,10 +10,10 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *hash_table = NULL;
-	unsigned long int i;
+  hash_table_t *hash_table = NULL;
+  unsigned long int i;
 
-	if (size < 1) /*Vérification de la taille*/
+  if (size < 1) /*Vérification de la taille*/
 		return (NULL);
 
 	hash_table = malloc(sizeof(hash_table_t));
@@ -39,7 +39,4 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/*Attribution de la taille à la structure*/
 	hash_table->size = size;
 	return (hash_table);
-
-	if (betty == NULL)
-	return(NULL);
 }
