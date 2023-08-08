@@ -13,7 +13,6 @@ int main(int argc, char *argv[])
 {
 	char temp[1024];
 	int file_from, file_to, read_file, write_file;
-	
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
