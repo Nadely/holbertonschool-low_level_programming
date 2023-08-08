@@ -10,9 +10,8 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *hash_table = NULL;
-	unsigned long int i;
-
+hash_table_t *hash_table = NULL;
+unsigned long int i;
 	if (size < 1) /*Vérification de la taille*/
 		return (NULL);
 
@@ -25,8 +24,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	hash_table->array = malloc(sizeof(hash_node_t *) * size);
 	if (hash_table->array == NULL)
-/*Allocation de mémoire pour le tableau de pointeurs*/
-	{
+	{/*Allocation de mémoire pour le tableau de pointeurs*/
 		free(hash_table);
 		return (NULL);
 	}
