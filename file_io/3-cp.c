@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	char temp[1024];
 	int file_from = open(argv[1], O_RDONLY), file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	int write_file = write(file_to, temp, read_file), read_file;
+	int read_file = read(file_from, temp, sizeof(temp)), write_file = write(file_to, temp, read_file);
 
 	if (argc != 3)
 	{
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while ((read_file = read(file_from, temp, sizeof(temp))) > 0)
+	while (read_file > 0)
 	{
 		if (write_file == -1 || write_file != read_file)
 		{
