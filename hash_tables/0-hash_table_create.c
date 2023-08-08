@@ -18,14 +18,14 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	hash_table = malloc(sizeof(hash_table_t));
 	if (hash_table == NULL)
-	/*Allocation de mémoire pour la structure de la table de hachage*/
+/*Allocation de mémoire pour la structure de la table de hachage*/
 	{
 		return (NULL);
 	}
 
 	hash_table->array = malloc(sizeof(hash_node_t *) * size);
 	if (hash_table->array == NULL)
-	/*Allocation de mémoire pour le tableau de pointeurs*/
+/*Allocation de mémoire pour le tableau de pointeurs*/
 	{
 		free(hash_table);
 		return (NULL);
