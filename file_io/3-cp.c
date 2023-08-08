@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	char temp[1024];
 	int file_from = open(argv[1], O_RDONLY), file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	int read_file, write_file = write(file_to, temp, read_file);
+	int write_file = write(file_to, temp, read_file), read_file;
 
 	if (argc != 3)
 	{
