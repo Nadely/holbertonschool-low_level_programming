@@ -39,7 +39,4 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/*Attribution de la taille à la structure*/
 	hash_table->size = size;
 	return (hash_table);
-
-	if (betty == NULL)
-	return(NULL);
 }
