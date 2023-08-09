@@ -7,7 +7,6 @@
  * create_node - Allocates memory for a new hash node and initializes it.
  * @key: The key.
  * @value: The value associated with the key.
- *
  * Return: A pointer to the new node or NULL if an error occurs.
  */
 hash_node_t *create_node(const char *key, const char *value)
@@ -41,16 +40,19 @@ hash_node_t *create_node(const char *key, const char *value)
  * @ht: The hash table.
  * @key: The key.
  * @value: The value associated with the key.
- *
  * Return: 1 if successful, 0 otherwise.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+	size_t index;
+	hash_node_t *current;
+	hash_node_t *new_node;
+
 	if (ht == NULL || key == NULL || value == NULL || key[0] == '\0')
 		return 0;
 
-	size_t index = key_index((const unsigned char *)key, ht->size);
-	hash_node_t *current = ht->array[index];
+	index = key_index((const unsigned char *)key, ht->size);
+	current = ht->array[index];
 
 	while (current != NULL)
 	{
@@ -64,7 +66,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		current = current->next;
 	}
 
-	hash_node_t *new_node = create_node(key, value);
+	new_node = create_node(key, value);
 	if (new_node == NULL)
 		return 0;
 
