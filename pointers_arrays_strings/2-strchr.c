@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-* *_strchr - locates
-* Return: locates
-* @s : pointer
-* @c: character
-*/
+ * *_strchr - locates
+ * Return: locates
+ * @s : pointer
+ * @c: character
+ */
 char *_strchr(char *s, char c)
 {
 	while (*s != '\0')

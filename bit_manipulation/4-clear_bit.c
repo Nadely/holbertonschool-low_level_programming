@@ -10,7 +10,7 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-		unsigned long int m = 1UL << index; /*"un niveau inatteignable"*/
+	unsigned long int m = 1UL << index; /*"un niveau inatteignable"*/
 	unsigned long int i;
 
 	if (index > sizeof(unsigned long int) * 8 /* renvoie la taille en bits*/)

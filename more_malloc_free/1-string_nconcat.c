@@ -1,18 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-* _strlen - lenght
-* Return: lenght
-* @str: pointer
-*/
+ * _strlen - lenght
+ * Return: lenght
+ * @str: pointer
+ */
 unsigned int _strlen(char *str)
 {
-unsigned int l;
-for (l = 0; str[l] != '\0'; l++)
-{
-continue;
-}
-return (l);
+	unsigned int l;
+	for (l = 0; str[l] != '\0'; l++)
+	{
+		continue;
+	}
+	return (l);
 }
 /**
  * string_nconcat - concatenates two strings
